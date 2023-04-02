@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./CSS/Reset.css" rel="stylesheet" />
+    <link href="./CSS/Style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>DrivenEats</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="container-total">
+      <div class="menu-superior">
+        <div class="titulo">DrivenEats</div>
+        <div class="sub-titulo">Sua comida em 6 minutos</div>
+      </div>
+      <!--FIM DO MENU SUPERIOR-->
+      <div class="distancia"></div>
+      <div class="corpo">
+        <div class="prato">
+          <h1 class="pprato">Primeiro, seu prato</h1>
+          <div class="caixas-comidas">
+            <div class="caixa-comida1" onclick="selecionarPrato(this)">
+              <div class="img-comida"><img src="./Images/frango_yin_yang.png" /></div>
+              <div class="nome">Frango Yin Yang</div>
+              <div class="descricao">
+                Um pouco de batata,<br />um pouco de salada
+              </div>
+              <div class="valor">R$ 14,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+            <div class="caixa-comida2" onclick="selecionarPrato(this)">
+              <div class="img-comida">
+                <img src="./Images/frango_yin_yang.png" /></div><div class="nome">Frango Yin Yang</div>
+              <div class="descricao">
+                Um pouco de batata,<br />um pouco de salada
+              </div>
+              <div class="valor">R$ 14,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+            <div class="caixa-comida3" onclick="selecionarPrato(this)">
+              <div class="img-comida">
+                <img src="./Images/frango_yin_yang.png" /></div><div class="nome">Frango Yin Yang</div>
+              <div class="descricao">
+                Um pouco de batata,<br />um pouco de salada
+              </div>
+              <div class="valor">R$ 14,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+          </div>
+        </div>
+        <!--FIM DO PRATO-->
+        <div class="bebida">
+          <h1>Agora, sua bebida</h1>
+          <div class="caixas-bebidas">
+            <div class="caixa-bebida1" onclick="selecionarBebida(this)">
+              <div class="img-bebida"><img src="./Images/coca-cola.png" /></div>
+              <div class="nome">Coquinha gelada</div>
+              <div class="descricao">
+                Lata 350ml
+              </div>
+              <div class="valor">R$ 4,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+            <div class="caixa-bebida2" onclick="selecionarBebida(this)">
+              <div class="img-bebida"><img src="./Images/coca-cola.png" /></div>
+              <div class="nome">Coquinha gelada</div>
+              <div class="descricao">
+                Lata 350ml
+              </div>
+              <div class="valor">R$ 4,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+            <div class="caixa-bebida3" onclick="selecionarBebida(this)">
+              <div class="img-bebida"><img src="./Images/coca-cola.png" /></div>
+              <div class="nome">Coquinha gelada</div>
+              <div class="descricao">
+                Lata 350ml
+              </div>
+              <div class="valor">R$ 4,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+          </div>
+        </div>
+        <!--FIM DA BEBIDA-->
+        <div class="sobremesa">
+          <h1>Por fim, sua sobremesa</h1>
+          <div class="caixas-sobremesas">
+            <div class="caixa-sobremesa1" onclick="selecionarSobremesa(this)">
+              <div class="img-sobremesa"><img src="./Images/pudim.png" /></div>
+              <div class="nome">Pudim</div>
+              <div class="descricao">
+                Apenas pudim
+              </div>
+              <div class="valor">R$ 7,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+            <div class="caixa-sobremesa2" onclick="selecionarSobremesa(this)">
+              <div class="img-sobremesa"><img src="./Images/pudim.png" /></div>
+              <div class="nome">Pudim</div>
+              <div class="descricao">
+                Apenas pudim
+              </div>
+              <div class="valor">R$ 7,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+            <div class="caixa-sobremesa3" onclick="selecionarSobremesa(this)">
+              <div class="img-sobremesa"><img src="./Images/pudim.png" /></div>
+              <div class="nome">Pudim</div>
+              <div class="descricao">
+                Apenas pudim
+              </div>
+              <div class="valor">R$ 7,90</div>
+              <ion-icon class="invisible" name="checkmark-circle"></ion-icon>
+            </div>
+            <!--CAIXA-->
+          </div>
+        </div>
+        <!--FIM DA SOBREMESA-->
+      </div>
+      <!--FIM DO CORPO-->
+      <div class="menu-inferior">
+        <div class="confirmar">
+          <button class="button1" disabled><p>Selecione os 3 itens<br />para finalizar o pedido</p> </button>
+        </div>
+      </div>
+      <!--FIM DO MENU INFERIOR-->
+    </div>
+    <script src="./JS/Script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
