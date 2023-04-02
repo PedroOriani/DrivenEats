@@ -10,15 +10,6 @@ function selecionarPrato(prato){
 
     prato.classList.add('selecionado');
 
-    const checkSelect = document.querySelector(".prato .invisible");
-    console.log(checkSelect);
-
-    if (checkSelect === null){
-        checkSelect.classList.add('invisible');
-    }
-
-    prato.classList.remove('invisible');
-
 } 
 
 function selecionarBebida(bebida){
