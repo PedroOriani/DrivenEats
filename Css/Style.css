@@ -363,7 +363,7 @@ h1 {
   justify-content: center;
 }
 
-.btn {
+.button {
   border: none;
 
   width: 364px;
@@ -389,7 +389,7 @@ h1 {
 
 /* BOTÃO ALTERNATIVO PARA QUANDO TIVEREM OS 3 INTENS SELECIONADOS:*/
 
-.btn-conf{
+.button-green{
   border: none;
 
   width: 364px;
