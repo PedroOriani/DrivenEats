@@ -1,14 +1,17 @@
 let pratov = '';
 let bebidav = '';
 let sobremesav = '';
+let Nprato = '';
+let Nbebida = '';
+let Nsobremesa = '';
+let Vprato = '';
+let Vbebida = '';
+let Vsobremesa = '';
+
 
 function selecionarPrato(prato){
     const btnSelect = document.querySelector(".prato .selecionado");
     pratov = 1;
-
-    console.log(pratov)
-    console.log(bebidav)
-    console.log(sobremesav)
 
     if (btnSelect !== null){
         btnSelect.classList.remove("selecionado");
@@ -24,8 +27,6 @@ function selecionarBebida(bebida){
     const btnSelect = document.querySelector(".bebida .selecionado");
     bebidav = 1;
 
-    console.log(bebidav)
-
     if (btnSelect !== null){
         btnSelect.classList.remove("selecionado");   
     }
@@ -38,8 +39,6 @@ function selecionarBebida(bebida){
 function selecionarSobremesa(sobremesa){
     const btnSelect = document.querySelector(".sobremesa .selecionado");
     sobremesav = 1;
-
-    console.log(sobremesav)
 
     if (btnSelect !== null){
         btnSelect.classList.remove("selecionado");   
@@ -69,6 +68,28 @@ function verificaSelecao(){
 }
 
 function fecharPedido(){
-    let msg_whats = "https://wa.me/5511982247801?text=" + encodeURIComponent('Olá,%20gostaria%20de%20fazer%20o%20pedido:\n-%20Prato:%20Frango%20Yin%20Yang\n-%20Bebida:%20Coquinha%20Gelada\n-%20Sobremesa:%20Pudim\nTotal:%20R$%2027,70');
+
+    Nprato = document.querySelector('.prato .selecionado .nome').innerText;
+    
+    Nbebida = document.querySelector('.bebida .selecionado .nome').innerText;
+    
+    Nsobremesa = document.querySelector('.sobremesa .selecionado .nome').innerText;
+    
+    Vprato = document.querySelector('.prato .selecionado .valor').innerText;
+    Vprato = Vprato.substring(2)
+    Vprato = Vprato.replace(",",".")
+
+    Vbebida = document.querySelector('.bebida .selecionado .valor').innerText;
+    Vbebida = Vbebida.substring(2)
+    Vbebida = Vbebida.replace(",",".")
+
+    Vsobremesa = document.querySelector('.sobremesa .selecionado .valor').innerText;
+    Vsobremesa = Vsobremesa.substring(2)
+    Vsobremesa = Vsobremesa.replace(",",".")
+    
+    let total = Number(Vprato) + Number(Vbebida) + Number(Vsobremesa);  
+    total = total.toFixed(2);
+
+    let msg_whats = "https://wa.me/5511982247801?text=" + encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${Nprato}\n- Bebida: ${Nbebida}\n- Sobremesa: ${Nsobremesa}\nTotal: R$ ${total.replace(".",",")}`);
     window.open(msg_whats);
 }
