@@ -8,7 +8,12 @@ ion-icon{
 
   right: 12.78px;
   bottom: 12.78px;
+  display: none;
 
+}
+
+.selecionado ion-icon{
+  display: block;
 }
 
 *{
@@ -412,16 +417,6 @@ h1 {
 
   cursor: pointer;
 }
-
-/*----------------------------------------------------------------*/
-
-
-/* ESCONDENDO OS CHECKS DE CADA CAIXA*/
-
-.invisible{
-  display: none;
-}
-
 
 /*----------------------------------------------------------------*/
 
